@@ -1,11 +1,39 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home - Christian Wolfe</title>
+  <link rel="stylesheet" href="styles/base.css">
 </head>
+
 <body>
-    
+  <nav>
+    <button onclick="toggleMenu()">
+      Menu <span class="arrow" id="arrow">&#9662;</span>
+    </button>
+    <div class="dropdown" id="menu">
+      <a href="index.html">Home</a>
+      <a href="pages/contact-us.html">Contact Us</a>
+      <a href="pages/top-stories.html">Top Stories</a>
+      <a href="pages/on-the-track.html">On the Track</a>
+      <a href="pages/in-the-field.html">In the Field</a>
+    </div>
+  </nav>
+  <div class="content">
+    <h1>Welcome to Shooting Stars: Track and Field </h1>
+    <p>This is the home page. Use the menu above to navigate to other pages.</p>
+  </div>
+  <footer>
+    &copy; 2025 Christian Wolfe | All rights reserved.
+  </footer>
+  <script>
+    function toggleMenu() {
+      document.getElementById("menu").classList.toggle("show");
+      document.getElementById("arrow").classList.toggle("rotated");
+    }
+  </script>
 </body>
+
 </html>

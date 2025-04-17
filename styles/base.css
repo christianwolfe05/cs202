@@ -1,0 +1,75 @@
+/* === General Layout === */
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* === Navigation Menu === */
+nav {
+  background: #333;
+  padding: 10px;
+}
+
+nav button {
+  background-color: #444;
+  color: #fff;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  text-align: left;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 16px;
+}
+
+.arrow {
+  transition: transform 0.3s ease;
+}
+
+.rotated {
+  transform: rotate(180deg);
+}
+
+.dropdown {
+  display: none;
+  background: #555;
+}
+
+.dropdown.show {
+  display: block;
+}
+
+.dropdown a {
+  color: #fff;
+  padding: 10px;
+  display: block;
+  text-decoration: none;
+}
+
+.dropdown a:hover {
+  background: #666;
+}
+
+/* === Page Content === */
+.content {
+  padding: 20px;
+  padding-bottom: 80px; /* Prevents content from being hidden behind the fixed footer */
+}
+
+/* === Fixed Footer === */
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 15px 10px;
+  font-size: 14px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+}
