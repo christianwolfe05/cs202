@@ -1,41 +1,35 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>On the Track</title>
+    <link rel="stylesheet" href="../styles/base.css" />
+  </head>
+  <body>
+    <header class="header">
+      <nav class="menu-toggle" onclick="toggleMenu()">
+        <span>Menu</span>
+        <span class="arrow" id="arrow">&#9660;</span>
+      </nav>
+      <ul class="dropdown hidden" id="dropdown">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="on-the-track.html">On the Track</a></li>
+        <li><a href="in-the-field.html">In the Field</a></li>
+        <li><a href="top-stories.html">Top Stories</a></li>
+        <li><a href="contact-us.html">Contact Us</a></li>
+      </ul>
+    </header>
 
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>On the Track - Christian Wolfe</title>
-  <link rel="stylesheet" href="../styles/base.css">
+    <main>
+      <h1>On the Track</h1>
+      <p>More updates from the track coming soon.</p>
+    </main>
 
-</head>
+    <footer class="footer">
+      <p>&copy; 2025 Christian Wolfe</p>
+    </footer>
 
-<body> 
-  <nav>
-    <button onclick="toggleMenu()">
-      Menu <span class="arrow" id="arrow">&#9662;</span>
-    </button>
-    <div class="dropdown" id="menu">
-      <a href="../index.html">Home</a>
-      <a href="contact-us.html">Contact Us</a>
-      <a href="top-stories.html">Top Stories</a>
-      <a href="on-the-track.html">On the Track</a>
-      <a href="in-the-field.html">In the Field</a>
-    </div>
-  </nav>
-
-  <div class="content">
-    <h1>On the Track</h1>
-    <p>Follow the latest in track, training, and more.</p>
-  </div>
-  <footer>
-   &copy; 2025 Christian Wolfe | All rights reserved.
-  </footer>
-  <script>
-    function toggleMenu() {
-      document.getElementById("menu").classList.toggle("show");
-      document.getElementById("arrow").classList.toggle("rotated");
-    }
-  </script>
-</body>
-
+    <script src="../scripts/base.js"></script>
+  </body>
 </html>

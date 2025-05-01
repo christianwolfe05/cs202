@@ -1,75 +1,77 @@
-/* === General Layout === */
-html, body {
-  height: 100%;
+* {
   margin: 0;
   padding: 0;
-  font-family: Arial, sans-serif;
+  box-sizing: border-box;
 }
 
-/* === Navigation Menu === */
-nav {
-  background: #333;
-  padding: 10px;
+body {
+  font-family: sans-serif;
+  line-height: 1.6;
+  background-color: #fff;
+  color: #000;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
-nav button {
-  background-color: #444;
-  color: #fff;
-  padding: 10px;
-  border: none;
-  cursor: pointer;
-  width: 100%;
-  text-align: left;
+.header {
+  background-color: #333;
+  color: white;
+  padding: 1rem;
+}
+
+.menu-toggle {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  font-size: 16px;
+  font-size: 1.2rem;
+  cursor: pointer;
 }
 
 .arrow {
   transition: transform 0.3s ease;
 }
 
-.rotated {
-  transform: rotate(180deg);
-}
-
 .dropdown {
-  display: none;
-  background: #555;
+  list-style: none;
+  background-color: #555;
 }
 
-.dropdown.show {
+.dropdown li a {
   display: block;
-}
-
-.dropdown a {
-  color: #fff;
-  padding: 10px;
-  display: block;
+  padding: 0.75rem 1rem;
   text-decoration: none;
+  color: white;
 }
 
-.dropdown a:hover {
-  background: #666;
+.dropdown li a:hover {
+  background-color: #777;
 }
 
-/* === Page Content === */
-.content {
-  padding: 20px;
-  padding-bottom: 80px; /* Prevents content from being hidden behind the fixed footer */
+.hidden {
+  display: none;
 }
 
-/* === Fixed Footer === */
-footer {
+main {
+  padding: 1.5rem;
+  flex: 1;
+}
+
+h1 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+section {
+  margin-top: 2rem;
+}
+
+footer.footer {
   background-color: #333;
-  color: #fff;
+  color: white;
   text-align: center;
-  padding: 15px 10px;
-  font-size: 14px;
+  padding: 1rem;
   position: fixed;
   bottom: 0;
-  left: 0;
   width: 100%;
-  z-index: 100;
 }

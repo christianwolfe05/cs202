@@ -1,39 +1,48 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shooting Stars</title>
+    <link rel="stylesheet" href="styles/base.css" />
+  </head>
+  <body>
+    <header class="header">
+      <nav class="menu-toggle" onclick="toggleMenu()">
+        <span>Menu</span>
+        <span class="arrow" id="arrow">&#9660;</span>
+      </nav>
+      <ul class="dropdown hidden" id="dropdown">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="pages/on-the-track.html">On the Track</a></li>
+        <li><a href="pages/in-the-field.html">In the Field</a></li>
+        <li><a href="pages/about.html">About</a></li>
+        <li><a href="pages/contact.html">Contact</a></li>
+      </ul>
+    </header>
 
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Home - Christian Wolfe</title>
-  <link rel="stylesheet" href="styles/base.css">
-</head>
+    <main>
+      <h1>Shooting Stars: Track and Field</h1>
 
-<body>
-  <nav>
-    <button onclick="toggleMenu()">
-      Menu <span class="arrow" id="arrow">&#9662;</span>
-    </button>
-    <div class="dropdown" id="menu">
-      <a href="index.html">Home</a>
-      <a href="pages/contact-us.html">Contact Us</a>
-      <a href="pages/top-stories.html">Top Stories</a>
-      <a href="pages/on-the-track.html">On the Track</a>
-      <a href="pages/in-the-field.html">In the Field</a>
-    </div>
-  </nav>
-  <div class="content">
-    <h1>Welcome to Shooting Stars: Track and Field </h1>
-    <p>This is the home page. Use the menu above to navigate to other pages.</p>
-  </div>
-  <footer>
-    &copy; 2025 Christian Wolfe | All rights reserved.
-  </footer>
-  <script>
-    function toggleMenu() {
-      document.getElementById("menu").classList.toggle("show");
-      document.getElementById("arrow").classList.toggle("rotated");
-    }
-  </script>
-</body>
+      <section>
+        <h2>On the Track:</h2>
+        <article>
+          <p>Grand Slam Track begins, beginning what may be a new era for track and field.</p>
+        </article>
+      </section>
 
+      <section>
+        <h2>In the Field:</h2>
+        <article>
+          <p>Alekna shatters his own world record, becomes first man over 75m in history.</p>
+        </article>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>&copy; 2025 Christian Wolfe</p>
+    </footer>
+
+    <script src="scripts/base.js"></script>
+  </body>
 </html>

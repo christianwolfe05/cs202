@@ -1,42 +1,48 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="../styles/base.css" />
+  </head>
+  <body>
+    <header class="header">
+      <nav class="menu-toggle" onclick="toggleMenu()">
+        <span>Menu</span>
+        <span class="arrow" id="arrow">&#9660;</span>
+      </nav>
+      <ul class="dropdown hidden" id="dropdown">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="on-the-track.html">On the Track</a></li>
+        <li><a href="in-the-field.html">In the Field</a></li>
+        <li><a href="top-stories.html">Top Stories</a></li>
+        <li><a href="contact-us.html">Contact Us</a></li>
+      </ul>
+    </header>
 
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contact Us - Christian Wolfe</title>
-  <link rel="stylesheet" href="../styles/base.css">
+    <main>
+      <h1>Contact Us</h1>
 
- 
-</head>
+      <section>
+        <h2>Get in Touch</h2>
+        <p>
+          For questions, feedback, or media inquiries, feel free to reach out.
+        </p>
+      </section>
 
-<nav>
-  <button onclick="toggleMenu()">
-    Menu <span class="arrow" id="arrow">&#9662;</span>
-  </button>
-  <div class="dropdown" id="menu">
-    <a href="../index.html">Home</a>
-    <a href="contact-us.html">Contact Us</a>
-    <a href="top-stories.html">Top Stories</a>
-    <a href="on-the-track.html">On the Track</a>
-    <a href="in-the-field.html">In the Field</a>
-  </div>
-</nav>
+      <section>
+        <h2>Contact Info</h2>
+        <p>Name: Christian Wolfe</p>
+        <p>Email: <a href="mailto:cwolfe@carroll.edu">cwolfe@carroll.edu</a></p>
+        <p>Phone: <a href="tel:14063663683">(406) 366-3683</a></p>
+      </section>
+    </main>
 
-  <div class="content">
-    <h1>Contact Us</h1>
-    <p><strong>Name:</strong> Christian Wolfe</p>
-    <p><strong>Phone Number:</strong> 406-366-3683</p>
-    <p><strong>Email:</strong> <a href="mailto:cwolfe@carroll.edu">cwolfe@carroll.edu</a></p>
-  </div>
-  <script>
-    function toggleMenu() {
-      document.getElementById("menu").classList.toggle("show");
-      document.getElementById("arrow").classList.toggle("rotated");
-    }
-  </script>
-</body>
-<footer>
-  &copy; 2025 Christian Wolfe | All rights reserved.
-</footer>
+    <footer class="footer">
+      <p>&copy; 2025 Christian Wolfe</p>
+    </footer>
+
+    <script src="../scripts/base.js"></script>
+  </body>
 </html>
